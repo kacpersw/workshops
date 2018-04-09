@@ -13,7 +13,7 @@ namespace FunctionApp1
     public static class HttpOrderFromSave
     {
         [FunctionName("HttpOrderFromSave")]
-        public static IActionResult Run([HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = null)]HttpRequest req, TraceWriter log)
+        public static IActionResult Run([HttpTrigger(AuthorizationLevel.Anonymous, "get" ,"post", Route = null)]HttpRequest req, TraceWriter log)
         {
             PhotoOrder orderData = null;
 
